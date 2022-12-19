@@ -7,7 +7,7 @@ passport.use(
       clientSecret: "8443e1491abfbd90d29ec01feb6e141ce1c1d816",
       callbackURL: "/auth/github/callback",
     },
-    (accessToken, refreshToken, profile, cb) => {
+    (accessToken, refreshToken, profile, done) => {
       //   User.findOrCreate({ githubId: profile.id }, function (err, user) {
       //     return cb(err, user);
       //   });
